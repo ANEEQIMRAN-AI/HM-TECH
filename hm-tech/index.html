@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HM TECH — Intelligent Systems, Engineered Precisely</title>
+<meta name="description" content="HM TECH is a software and AI engineering studio building custom applications, autonomous AI agents, and cloud platforms for growing businesses.">
+<link rel="icon" href="assets/hm-tech-logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== SCROLL PROGRESS ========== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ========== AMBIENT BACKGROUND ========== -->
+<div class="bg-blob blob-a" aria-hidden="true"></div>
+<div class="bg-blob blob-b" aria-hidden="true"></div>
+
+<!-- ========== PRELOADER ========== -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <img src="assets/hm-tech-logo.jpeg" alt="" class="preloader-logo">
+    <div class="preloader-bar"><span id="preloaderFill"></span></div>
+    <p class="preloader-text"><span id="preloaderPct">0</span>% — booting systems</p>
+  </div>
+</div>
+
+<!-- ========== CURSOR GLOW (desktop only) ========== -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ========== NAVBAR ========== -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <img src="assets/hm-tech-logo.jpeg" alt="HM TECH logo" class="nav-logo">
+      <span class="nav-brand-text">HM<span class="accent">TECH</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#work" data-nav>Work</a>
+      <a href="#services" data-nav>Services</a>
+      <a href="#pricing" data-nav>Pricing</a>
+      <a href="#process" data-nav>Process</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <canvas id="circuitCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Software &amp; AI Engineering Studio</p>
+        <h1 class="hero-title">We build the systems your growth depends on.</h1>
+        <p class="hero-sub">HM TECH designs and ships custom software, autonomous AI agents, and cloud platforms for founders and enterprises who can't afford downtime.</p>
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary">See Our Work</a>
+          <a href="#contact" class="btn btn-ghost">Start a Project</a>
+        </div>
+        <div class="hero-chips">
+          <span class="chip"><i></i>Custom Software</span>
+          <span class="chip"><i></i>AI Automation</span>
+          <span class="chip"><i></i>Cloud Native</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span>Scroll</div>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Custom Software Engineering</span><span class="dot">◆</span>
+      <span>Autonomous AI Agents</span><span class="dot">◆</span>
+      <span>Cloud-Native Architecture</span><span class="dot">◆</span>
+      <span>Computer Vision Systems</span><span class="dot">◆</span>
+      <span>Zero-Downtime Infrastructure</span><span class="dot">◆</span>
+      <span>Custom Software Engineering</span><span class="dot">◆</span>
+      <span>Autonomous AI Agents</span><span class="dot">◆</span>
+      <span>Cloud-Native Architecture</span><span class="dot">◆</span>
+      <span>Computer Vision Systems</span><span class="dot">◆</span>
+      <span>Zero-Downtime Infrastructure</span><span class="dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ========== STATS ========== -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Numbers that back up the work.</h2>
+        <p>We track engineering outcomes the same way we track uptime — precisely.</p>
+      </div>
+      <div class="stats-row reveal">
+        <div class="stat" data-count="99.7" data-suffix="%"><span class="stat-num">0</span><p>Client Satisfaction Rate</p></div>
+        <div class="stat" data-count="15" data-suffix="+"><span class="stat-num">0</span><p>Products Shipped to Production</p></div>
+        <div class="stat" data-count="5" data-suffix="+"><span class="stat-num">0</span><p>Countries Served</p></div>
+        <div class="stat" data-count="3" data-suffix="+ Yrs"><span class="stat-num">0</span><p>Engineering Experience</p></div>
+        <div class="stat" data-count="20" data-prefix="&lt;" data-suffix="m"><span class="stat-num">0</span><p>Average Support Response</p></div>
+        <div class="stat" data-count="50" data-prefix="$" data-suffix="K+"><span class="stat-num">0</span><p>Client Revenue Enabled</p></div>
+      </div>
+      <div class="stats-line" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Capabilities</p>
+        <h2>Full-spectrum engineering, one team.</h2>
+        <p>From zero-touch AI agents to production-grade web platforms — built, tested, and owned end to end.</p>
+      </div>
+      <div class="bento reveal">
+        <article class="bento-card bento-lg">
+          <span class="bento-tag">AI &amp; Automation</span>
+          <h3>Autonomous AI Systems</h3>
+          <p>We deploy self-operating AI agents, n8n pipelines, and LLM integrations that take real work off your team's plate — not chatbots, working systems.</p>
+        </article>
+        <article class="bento-card">
+          <span class="bento-tag">Core Engineering</span>
+          <h3>Custom Enterprise Software</h3>
+          <p>Mission-critical backends, APIs, and microservices built in Python, C++, and Node for systems that can't go down.</p>
+        </article>
+        <article class="bento-card">
+          <span class="bento-tag">Web Platforms</span>
+          <h3>High-Performance Web Apps</h3>
+          <p>React and Next.js interfaces engineered for instant load times and fluid 60fps interaction.</p>
+        </article>
+        <article class="bento-card">
+          <span class="bento-tag">Internal Tools</span>
+          <h3>Business Systems &amp; Dashboards</h3>
+          <p>Workflow automation and reporting dashboards that replace spreadsheets and manual approval chains.</p>
+        </article>
+        <article class="bento-card">
+          <span class="bento-tag">Mobile</span>
+          <h3>Mobile Product Development</h3>
+          <p>Native and cross-platform apps with live GPS tracking, offline sync, and interfaces people enjoy using.</p>
+        </article>
+        <article class="bento-card">
+          <span class="bento-tag">Cloud &amp; SaaS</span>
+          <h3>Cloud &amp; SaaS Architecture</h3>
+          <p>Docker, PostgreSQL, and AWS infrastructure designed to scale from first user to first million.</p>
+        </article>
+        <article class="bento-card">
+          <span class="bento-tag">Machine Learning</span>
+          <h3>Vision ML &amp; OCR Engineering</h3>
+          <p>Custom computer vision models and text-extraction pipelines trained on your data, not generic APIs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ADVANTAGE ========== -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-copy reveal">
+          <p class="eyebrow">Why HM TECH</p>
+          <h2>Built for teams who need it to actually work.</h2>
+          <p>We don't sell templates or generic integrations. Every build is engineered for your specific data, your specific users, and your specific scale.</p>
+          <a href="#contact" class="btn btn-primary">Talk to an engineer</a>
+        </div>
+        <div class="why-list reveal">
+          <div class="why-item">
+            <span class="why-num">01</span>
+            <div><h3>Systems that run themselves</h3><p>Automation-first design means fewer manual steps and fewer places for things to break.</p></div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">02</span>
+            <div><h3>Built for scale from day one</h3><p>Architecture decisions are made for where you're headed, not just where you are today.</p></div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">03</span>
+            <div><h3>Machine intelligence, not just chat</h3><p>Production computer-vision models and recommendation engines — real ML, not a wrapped API call.</p></div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">04</span>
+            <div><h3>Speed without shortcuts</h3><p>Sub-second load times and clean code, because performance is a feature, not an afterthought.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Case Studies</p>
+        <h2>Selected work.</h2>
+        <p>Real systems, shipped for real businesses — logistics, travel, retail, and manufacturing.</p>
+      </div>
+      <div class="work-grid reveal" id="workGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="section pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Pricing</p>
+        <h2>Straightforward pricing for serious builds.</h2>
+        <p>Every project is scoped individually — these are starting ranges so you know what to expect before we talk.</p>
+      </div>
+
+      <div class="pricing-toggle reveal" role="group" aria-label="Pricing mode">
+        <button class="toggle-btn active" data-mode="project">Project-Based</button>
+        <button class="toggle-btn" data-mode="retainer">Monthly Retainer</button>
+      </div>
+
+      <div class="pricing-grid reveal" id="pricingGrid" data-mode="project">
+        <!-- Project-based -->
+        <article class="price-card" data-mode-card="project">
+          <h3>Starter Build</h3>
+          <p class="price-tag">$1,500 <span>– $4,000</span></p>
+          <p class="price-desc">For MVPs, a single web app, or one focused automation.</p>
+          <ul>
+            <li>1 core product or module</li>
+            <li>Up to 4 weeks delivery</li>
+            <li>2 revision rounds</li>
+            <li>30-day post-launch support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+        </article>
+        <article class="price-card price-featured" data-mode-card="project">
+          <span class="price-badge">Most Popular</span>
+          <h3>Growth System</h3>
+          <p class="price-tag">$5,000 <span>– $15,000</span></p>
+          <p class="price-desc">For multi-feature platforms, AI integrations, or mobile apps.</p>
+          <ul>
+            <li>Full product build</li>
+            <li>AI / automation integration</li>
+            <li>6–10 week delivery</li>
+            <li>90-day SLA support</li>
+            <li>Dedicated engineer</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+        </article>
+        <article class="price-card" data-mode-card="project">
+          <h3>Enterprise Scale</h3>
+          <p class="price-tag">Custom Quote</p>
+          <p class="price-desc">For complex platforms, multiple integrations, and dedicated teams.</p>
+          <ul>
+            <li>Dedicated engineering pod</li>
+            <li>Architecture &amp; security review</li>
+            <li>Ongoing SLA support</li>
+            <li>Priority response queue</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block">Request a Quote</a>
+        </article>
+
+        <!-- Retainer -->
+        <article class="price-card" data-mode-card="retainer" hidden>
+          <h3>Essential Retainer</h3>
+          <p class="price-tag">$1,200 <span>/mo</span></p>
+          <p class="price-desc">Ongoing support and small feature work.</p>
+          <ul>
+            <li>Up to 20 hrs / month</li>
+            <li>Bug fixes &amp; maintenance</li>
+            <li>Email &amp; ticket support</li>
+            <li>Monthly progress report</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+        </article>
+        <article class="price-card price-featured" data-mode-card="retainer" hidden>
+          <span class="price-badge">Most Popular</span>
+          <h3>Growth Retainer</h3>
+          <p class="price-tag">$3,500 <span>/mo</span></p>
+          <p class="price-desc">A dedicated slice of engineering capacity.</p>
+          <ul>
+            <li>Up to 60 hrs / month</li>
+            <li>Priority queue</li>
+            <li>Feature development</li>
+            <li>Direct engineer access</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+        </article>
+        <article class="price-card" data-mode-card="retainer" hidden>
+          <h3>Enterprise Retainer</h3>
+          <p class="price-tag">Custom</p>
+          <p class="price-desc">A dedicated team embedded in your roadmap.</p>
+          <ul>
+            <li>Dedicated multi-engineer team</li>
+            <li>Unlimited priority support</li>
+            <li>Quarterly architecture review</li>
+            <li>Custom SLA terms</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block">Request a Quote</a>
+        </article>
+      </div>
+
+      <div class="price-list reveal">
+        <h3>À la carte starting prices</h3>
+        <div class="price-table">
+          <div class="price-row"><span>Website / Web App</span><span>from $1,200</span></div>
+          <div class="price-row"><span>Mobile App (iOS/Android)</span><span>from $4,500</span></div>
+          <div class="price-row"><span>AI Automation Workflow</span><span>from $1,800</span></div>
+          <div class="price-row"><span>Computer Vision / OCR Model</span><span>from $3,000</span></div>
+          <div class="price-row"><span>Cloud / SaaS Architecture Setup</span><span>from $2,500</span></div>
+          <div class="price-row"><span>Custom Dashboard / Internal Tool</span><span>from $2,000</span></div>
+          <div class="price-row"><span>UI/UX Design Sprint</span><span>from $900</span></div>
+        </div>
+        <p class="price-note">Prices are starting estimates — final quotes depend on scope. Every engagement includes a free architecture consult before you commit to anything.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS ========== -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Methodology</p>
+        <h2>A transparent, seven-phase build process.</h2>
+        <p>The same roadmap for every engagement — so you always know what's next.</p>
+      </div>
+      <div class="process-list reveal">
+        <div class="process-step">
+          <span class="process-num">01</span>
+          <div><h3>Discovery &amp; Technical Audit</h3><p>A deep audit of your current bottlenecks, requirements, and business logic.</p></div>
+        </div>
+        <div class="process-step">
+          <span class="process-num">02</span>
+          <div><h3>System Architecture &amp; Blueprinting</h3><p>Database schemas, service topologies, and module wireframes, mapped before code.</p></div>
+        </div>
+        <div class="process-step">
+          <span class="process-num">03</span>
+          <div><h3>UI/UX &amp; Motion Design</h3><p>Interfaces and interaction design crafted for clarity and speed.</p></div>
+        </div>
+        <div class="process-step">
+          <span class="process-num">04</span>
+          <div><h3>Core Engineering &amp; AI Integration</h3><p>Production code, model integration, and automated data pipelines.</p></div>
+        </div>
+        <div class="process-step">
+          <span class="process-num">05</span>
+          <div><h3>Rigorous QA &amp; Load Testing</h3><p>Automated tests, concurrency simulations, and security checks.</p></div>
+        </div>
+        <div class="process-step">
+          <span class="process-num">06</span>
+          <div><h3>Zero-Downtime Launch</h3><p>Deployment to edge/cloud infrastructure with continuous monitoring.</p></div>
+        </div>
+        <div class="process-step">
+          <span class="process-num">07</span>
+          <div><h3>Support &amp; Continuous Evolution</h3><p>Ongoing SLA support, performance tuning, and feature scaling.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECH STACK ORBIT ========== -->
+  <section class="section stack-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Technology</p>
+        <h2>The stack behind the systems.</h2>
+      </div>
+      <div class="orbit reveal" aria-hidden="true">
+        <div class="orbit-ring ring-1">
+          <div class="orbit-item"><span>React 19</span></div>
+          <div class="orbit-item"><span>Next.js</span></div>
+          <div class="orbit-item"><span>TypeScript</span></div>
+          <div class="orbit-item"><span>Tailwind CSS</span></div>
+        </div>
+        <div class="orbit-ring ring-2">
+          <div class="orbit-item"><span>Python</span></div>
+          <div class="orbit-item"><span>C++</span></div>
+          <div class="orbit-item"><span>PyTorch</span></div>
+          <div class="orbit-item"><span>Node.js</span></div>
+          <div class="orbit-item"><span>Flask</span></div>
+        </div>
+        <div class="orbit-ring ring-3">
+          <div class="orbit-item"><span>PostgreSQL</span></div>
+          <div class="orbit-item"><span>Docker</span></div>
+          <div class="orbit-item"><span>AWS</span></div>
+          <div class="orbit-item"><span>n8n AI</span></div>
+          <div class="orbit-item"><span>OpenAI API</span></div>
+        </div>
+        <div class="orbit-core"><img src="assets/hm-tech-logo.jpeg" alt="HM TECH"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section testi-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Client Endorsements</p>
+        <h2>Trusted by teams who needed it to just work.</h2>
+      </div>
+      <div class="testi-carousel reveal">
+        <div class="testi-track" id="testiTrack">
+          <article class="testi-card">
+            <p>"HM TECH turned a manual inventory process into a fully automated pipeline — we haven't touched a spreadsheet in months."</p>
+            <div class="testi-meta"><strong>Operations Director</strong><span>Manufacturing &amp; Supply</span></div>
+          </article>
+          <article class="testi-card">
+            <p>"Wander Hub's recommendation engine impressed our travel partners immediately. Their ML and voice integration work is genuinely world-class."</p>
+            <div class="testi-meta"><strong>Head of Product</strong><span>TravelTech Ventures</span></div>
+          </article>
+          <article class="testi-card">
+            <p>"The team shipped our billing platform in weeks, not months, and it hasn't gone down once since launch."</p>
+            <div class="testi-meta"><strong>Founder</strong><span>E-commerce Startup</span></div>
+          </article>
+        </div>
+        <div class="testi-controls">
+          <button id="testiPrev" aria-label="Previous testimonial">‹</button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button id="testiNext" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2>Clear answers to common questions.</h2>
+      </div>
+      <div class="faq-list reveal" id="faqList">
+        <div class="faq-item open">
+          <button class="faq-q">What's included in a typical project? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Discovery, architecture, design, development, QA, and a supported launch — every engagement follows the same seven-phase process, and you get full source ownership at the end.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you offer fixed-price or hourly billing? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Both. Most builds run as fixed-price packages (see our pricing section), and ongoing work is available as a monthly retainer with a set hours allocation.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can you integrate AI agents into our existing software? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Yes — we regularly connect autonomous AI workflows, n8n pipelines, and OpenAI/Gemini integrations into existing stacks without a full rebuild.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you provide support after launch? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Every package includes post-launch SLA support, and you can extend it indefinitely through a monthly retainer.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Start a Project</p>
+          <h2>Let's build something that works as hard as you do.</h2>
+          <p>Tell us about your project and we'll come back with a scoped plan, timeline, and price range within one business day.</p>
+          <div class="contact-links">
+            <a href="mailto:hello@hmtech.io">hello@hmtech.io</a>
+            <div class="social-row">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="GitHub">gh</a>
+              <a href="#" aria-label="Instagram">ig</a>
+              <a href="#" aria-label="Facebook">fb</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="cName">Name &amp; Company</label>
+            <input type="text" id="cName" name="cName" placeholder="Jane Doe, Acme Inc.">
+            <span class="form-error">Please tell us your name.</span>
+          </div>
+          <div class="form-row">
+            <label for="cEmail">Work Email</label>
+            <input type="email" id="cEmail" name="cEmail" placeholder="jane@acme.com">
+            <span class="form-error">Enter a valid email address.</span>
+          </div>
+          <div class="form-row">
+            <label for="cBudget">Budget Range</label>
+            <select id="cBudget" name="cBudget">
+              <option value="">Select a range</option>
+              <option>Under $4,000 — Starter Build</option>
+              <option>$5,000–$15,000 — Growth System</option>
+              <option>Enterprise / Custom</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="cBrief">Project Details</label>
+            <textarea id="cBrief" name="cBrief" rows="4" placeholder="What are you trying to build?"></textarea>
+            <span class="form-error">Give us a few details about the project.</span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+            <span class="btn-label">Send Project Brief</span>
+          </button>
+          <p class="form-success" id="formSuccess">Brief received — we'll reply within one business day.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/hm-tech-logo.jpeg" alt="HM TECH logo" class="footer-logo">
+      <div>
+        <p class="footer-name">HM<span class="accent">TECH</span></p>
+        <p class="footer-tag">Intelligent Systems. Engineered Precisely.</p>
+      </div>
+    </div>
+    <nav class="footer-links">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="mailto:hello@hmtech.io" aria-label="Email">✉</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="GitHub">gh</a>
+      <a href="#" aria-label="Instagram">ig</a>
+      <a href="#" aria-label="Facebook">fb</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 HM TECH. All rights reserved.</div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
